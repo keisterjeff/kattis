@@ -1,0 +1,24 @@
+import java.util.*;
+import java.lang.Math;
+
+public class stopwatch {
+    private static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int n, i, stop, start, tot;
+        
+        n = input.nextInt();
+        if (n % 2 == 0) {
+            System.out.println("still running");
+        } else {
+            i = 0;
+            tot = 0;
+            for (i = 0; i <= n - 2; i++) {
+                start = input.nextInt();
+                stop = input.nextInt();
+                tot = stop - start;
+            }
+            System.out.println(tot);
+        }
+    }
+}
